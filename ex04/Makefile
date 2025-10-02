@@ -1,9 +1,10 @@
 CC = c++
 FLAGS = -Wall -Wextra -Werror -std=c++98
-SRCS = Harl.cpp main.cpp
+SRCS = main.cpp
 OBJS = $(SRCS:.cpp=.o)
 
-NAME = Harl
+NAME = Replace
+
 all: $(NAME)
 
 $(NAME): $(OBJS)

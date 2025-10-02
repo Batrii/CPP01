@@ -11,9 +11,9 @@ int main(int argc, char **argv)
     }
     std::ifstream infile(argv[1]);
     std::string line;
-    
-    std::string filename = argv[1] + std::string(".replace");
-    std::ofstream outfile(filename);
+
+    std::string filename = std::string(argv[1]) + ".replace";
+    std::ofstream outfile(filename.c_str());
     if (!infile.is_open() || !outfile.is_open())
     {
         std::cerr << "Error opening file." << std::endl;
