@@ -1,5 +1,6 @@
 #include "zombie.hpp"
 
+Zombie::Zombie(){};
 
 void	Zombie::announce()
 {

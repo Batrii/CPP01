@@ -1,6 +1,6 @@
 CC = c++
 FLAGS = -Wall -Wextra -Werror -std=c++98
-SRCS = zombie.cpp main.cpp
+SRCS = newZombie.cpp randomChump.cpp zombie.cpp main.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 NAME = zombie
