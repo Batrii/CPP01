@@ -15,6 +15,10 @@ Zombie::Zombie(std::string name)
 {
 	this->name = name;
 }
+Zombie::~Zombie()
+{
+	std::cout << "the destructor made his job succefully " << this->name << std::endl;
+}
 Zombie* newZombie( std::string name )
 {
 	Zombie *s2 = new Zombie(name);

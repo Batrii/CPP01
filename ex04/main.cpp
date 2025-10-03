@@ -29,7 +29,9 @@ int main(int argc, char **argv)
             line = line.substr(0, pos) + s2 + line.substr(pos + s1.length());
             pos += s2.length();
         }
-        outfile << line << std::endl;
+        outfile << line;
+        if (!infile.eof())
+            outfile << std::endl;
     }
     return 0;
 }
