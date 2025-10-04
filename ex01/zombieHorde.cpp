@@ -3,7 +3,13 @@
 
 Zombie* zombieHorde( int N, std::string name )
 {
-	Zombie *zombieHorde = new Zombie[N];
+	Zombie *zombieHorde = new (std::nothrow) Zombie[N];
+
+	if (!zombieHorde)
+	{
+		std::cerr << "allocation failed" << std::endl;
+		return (NULL);
+	}
 
 	int i = 0;
 	while (i < N)
